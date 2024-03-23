@@ -9,7 +9,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     
   <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-b9f8e70f.css">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-5b791d57.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-cf6910df.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-48a067cc.css">
 </head>
 <body>
     <div class="form-div">
@@ -17,6 +19,8 @@
             <input class="inp" type="text" placeholder="Search images..." name="search">
             <button type="submit" class="btn">Search</button>
         </form>
+        <h4 class="loading hide">Loading images.Please wait...</h4>
+        <ul class="list"></ul>
     </div>
     
 </body>
