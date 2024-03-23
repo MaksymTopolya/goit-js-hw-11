@@ -1,25 +1,55 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+.form-div{
+    display: flex;
+    padding-left: 1100px;
+    padding-top: 100px;
+}
+.form{
+    width: 371px;
+        height: 40px;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+.inp{
+    border-radius: 4px;
+    border: 1px solid grey;
+        width: 272px;
+        height: 40px;
+        background: #fff;
+        font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.04em;
+            color: #808080;
+            padding-left: 10px;
+}
+ .inp:hover{
+    border: 1px solid black;
+ }
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+ .inp:focus {
+     border: 1px solid blue;
+     outline: none;
+ }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+
+.btn{
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid transparent;
+        padding: 8px 16px;
+        width: 91px;
+        height: 40px;
+        font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.04em;
+            color: #fff;
+            background: #4e75ff;
+}
+
+.btn:hover{
+    background: #6c8cff;
 }
