@@ -14,8 +14,9 @@ export function getPhotos(query) {
   return fetch(url)
     .then(res => res.json())
       .then(data => {
-          hideLoading()
           return data; 
+      }).finally((elem) => {
+        hideLoading()
       })
 }
 
